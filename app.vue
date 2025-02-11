@@ -7,43 +7,22 @@
         <button
           class="px-4 py-2 rounded-full border border-orange-500 text-orange-500"
         >
-          Login
+          私について
         </button>
       </div>
     </header>
 
     <!-- メインコンテンツ -->
     <main>
-      <!-- カルーセルセクション -->
-      <div class="relative w-full h-64 overflow-hidden">
-        <!-- カルーセルの実装は省略 -->
-        <div
-          class="absolute inset-0 bg-gradient-to-r from-orange-500 to-yellow-500 opacity-50"
-        ></div>
-      </div>
-
-      <!-- メインナビゲーション -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 p-8">
-        <NavButton icon="user" text="プロフィール" />
-        <NavButton icon="calendar" text="スキル" />
-        <NavButton icon="projects" text="制作物" />
-        <NavButton icon="contact" text="SNS" />
-      </div>
-
       <!-- 最新の制作物 -->
       <div class="p-8">
-        <h2 class="text-2xl font-bold mb-6">最新の制作物</h2>
+        <h2 class="text-2xl font-bold mb-6">制作物一覧</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <ProjectCard
             v-for="project in projects"
             :key="project.id"
             :project="project"
           />
-        </div>
-        <div class="text-center mt-8">
-          <button class="px-8 py-3 bg-orange-500 rounded-full">
-            All Projects
-          </button>
         </div>
       </div>
     </main>
