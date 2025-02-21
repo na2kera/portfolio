@@ -1,9 +1,9 @@
 <template>
-  <div class="bg-gray-800 rounded-lg overflow-hidden">
+  <div class="bg-gray-800 rounded-lg overflow-hidden w-full md:w-96">
     <img
       :src="project.image"
       :alt="project.title"
-      class="w-full h-48 object-cover"
+      class="w-full h-[calc(100vw*9/16)] md:h-[calc(24rem*9/16)] object-cover"
     />
     <div class="p-4">
       <div class="text-sm text-gray-400">{{ project.date }}</div>
