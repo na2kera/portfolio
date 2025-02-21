@@ -36,7 +36,7 @@ const projects = [
     title: "プロジェクト1",
     date: "2025.1.23",
     description: "プロジェクトの説明文がここに入ります",
-    image: "/path/to/image1.jpg",
+    image: "/images/projects/3AI.webp",
   },
   {
     id: 2,
