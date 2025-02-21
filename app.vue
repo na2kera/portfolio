@@ -43,7 +43,7 @@ const projects = [
     title: "プロジェクト2",
     date: "2025.2.10",
     description: "プロジェクトの説明文がここに入ります",
-    image: "/path/to/image2.jpg",
+    image: "/images/projects/refty.png",
   },
 ];
 </script>
