@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gray-800 rounded-lg overflow-hidden w-full md:w-96">
     <img
-      :src="project.image"
+      :src="project.thumbnail"
       :alt="project.title"
       class="w-full h-[calc(100vw*9/16)] md:h-[calc(24rem*9/16)] object-cover"
     />
@@ -19,10 +19,16 @@ interface Project {
   title: string;
   date: string;
   description: string;
-  image: string;
+  thumbnail: string;
+  images: string[];
+  urls?: string[];
+  movie?: string;
+  slide?: string;
 }
 
-defineProps<{
+const props = defineProps<{
   project: Project;
 }>();
+
+console.log("project", props.project);
 </script>
