@@ -42,6 +42,11 @@ export const profile: Profile = {
       degree: "理工学部理工学科データ数理専攻",
       period: "2023 - 2027",
     },
+    {
+      school: "千葉県立千葉東高等学校",
+      degree: "普通科",
+      period: "2020 - 2023",
+    },
   ],
   contacts: [
     {
