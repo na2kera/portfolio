@@ -57,7 +57,7 @@ import { profile } from "~/data/profile";
       <div class="relative space-y-8">
         <!-- 縦線 -->
         <div
-          class="absolute left-4 top-8 h-[calc(100%-2rem)] w-0.5 bg-gray-700"
+          class="absolute left-4 top-0 h-[calc(100%)] w-0.5 bg-gray-700"
         ></div>
 
         <div
