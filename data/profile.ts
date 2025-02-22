@@ -19,9 +19,9 @@ export interface Profile {
 }
 
 export const profile: Profile = {
-  name: "あなたの名前",
-  title: "職種や肩書き",
-  bio: "自己紹介文をここに記載します。これまでの経験や、興味のある分野、目指していることなどを書くことができます。",
+  name: "ぴーなっつ",
+  title: "学生エンジニア",
+  bio: "27卒の学生エンジニア。フロントエンドをメインにしています。Cursorが好き。",
   skills: [
     {
       category: "プログラミング言語",
