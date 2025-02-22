@@ -14,8 +14,8 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
-    title: "プロジェクト1",
-    date: "2025.1.23",
+    title: "3AIよれば文殊の知恵",
+    date: "2023.10~",
     description: "プロジェクトの説明文がここに入ります",
     thumbnail: "/images/projects/3AI.webp",
     images: ["/images/projects/3AI.webp", "/images/projects/3AI-2.png"],
@@ -34,8 +34,8 @@ export const projects: Project[] = [
   },
   {
     id: 2,
-    title: "プロジェクト2",
-    date: "2025.2.10",
+    title: "リフティ",
+    date: "2024.10~",
     description: "プロジェクトの説明文がここに入ります",
     thumbnail: "/images/projects/refty.png",
     images: [
