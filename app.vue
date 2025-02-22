@@ -4,11 +4,11 @@
     <header class="bg-black p-4 flex justify-between items-center">
       <div class="text-2xl font-bold">Portfolio</div>
       <div class="flex gap-4">
-        <NuxtLink to="/about">
+        <NuxtLink :to="route.path === '/about' ? '/' : '/about'">
           <button
             class="px-4 py-2 rounded-full border border-orange-500 text-orange-500"
           >
-            私について
+            {{ route.path === "/about" ? "プロダクト一覧" : "私について" }}
           </button>
         </NuxtLink>
       </div>
@@ -22,5 +22,5 @@
 </template>
 
 <script setup lang="ts">
-import { projects } from "~/data/projects";
+const route = useRoute();
 </script>
