@@ -51,4 +51,32 @@ export const projects: Project[] = [
     ],
     urlTitles: ["GitHubリポジトリ", "LP", "プロダクト"],
   },
+  {
+    id: 3,
+    title: "GeekLink",
+    date: "2024.5~",
+    description: "プロジェクトの説明文がここに入ります",
+    thumbnail: "/images/projects/geeklink.png",
+    images: [
+      "/images/projects/geeklink.png",
+      "/images/projects/geeklink-2.png",
+      "/images/projects/geeklink-3.png",
+      "/images/projects/geeklink-4.png",
+      "/images/projects/geeklink-5.png",
+      "/images/projects/geeklink-6.png",
+      "/images/projects/geeklink-7.png",
+      "/images/projects/geeklink-8.png",
+    ],
+    urls: [
+      "https://github.com/kou7306/GeekLink_frontend",
+      "https://github.com/kou7306/GeekLink_backend",
+    ],
+    urlTitles: [
+      "GitHubリポジトリ（フロント）",
+      "GitHubリポジトリ（バックエンド）",
+    ],
+    movie: "/videos/projects/geeklink.mp4",
+    slide:
+      "https://www.canva.com/design/DAGV8iQnDEo/M1P3i-p3hZWwmE2T1bWAkw/view?utm_content=DAGV8iQnDEo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h89f3385436",
+  },
 ];
