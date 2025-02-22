@@ -44,8 +44,11 @@ export const projects: Project[] = [
       "/images/projects/refty.png",
       "/images/projects/refty.png",
     ],
-    urls: ["https://github.com/yusei53/refty"],
-    urlTitles: ["GitHubリポジトリ"],
-    slide: "",
+    urls: [
+      "https://github.com/yusei53/refty",
+      "https://www.refty.jp/welcome",
+      "https://www.refty.jp/",
+    ],
+    urlTitles: ["GitHubリポジトリ", "LP", "プロダクト"],
   },
 ];
