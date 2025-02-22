@@ -70,16 +70,20 @@ if (!project.value) {
             <i class="i-mdi-presentation text-xl"></i>
             <span class="leading-none">スライド</span>
           </a>
+        </div>
+      </div>
 
-          <div v-if="project.movie" class="aspect-video">
-            <iframe
-              :src="project.movie"
-              class="w-full h-full"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
+      <!-- プロジェクト動画 -->
+      <div v-if="project.movie">
+        <h2 class="text-2xl font-bold">プロジェクト動画</h2>
+        <div v-if="project.movie" class="aspect-video">
+          <iframe
+            :src="project.movie"
+            class="w-full h-full"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
     </div>

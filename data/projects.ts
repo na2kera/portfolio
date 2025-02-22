@@ -75,7 +75,7 @@ export const projects: Project[] = [
       "GitHubリポジトリ（フロント）",
       "GitHubリポジトリ（バックエンド）",
     ],
-    movie: "/videos/geeklink.mp4",
+    movie: "/videos/projects/geeklink.mp4",
     slide:
       "https://www.canva.com/design/DAGV8iQnDEo/M1P3i-p3hZWwmE2T1bWAkw/view?utm_content=DAGV8iQnDEo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h89f3385436",
   },
