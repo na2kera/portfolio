@@ -67,14 +67,20 @@ export const profile: Profile = {
   ],
   timeline: [
     {
-      date: "2023",
+      date: "2023 3月",
+      title: "千葉県立千葉東高等学校卒業",
+      description: "千葉県立千葉東高等学校普通科を卒業",
+    },
+    {
+      date: "2023 4月",
       title: "成蹊大学入学",
       description: "成蹊大学理工学部理工学科データ数理専攻に入学",
     },
     {
-      date: "2023",
-      title: "成蹊大学入学",
-      description: "成蹊大学理工学部理工学科データ数理専攻に入学",
+      date: "2023 6月",
+      title: "ローコードハッカソンに参加",
+      description:
+        "IDEACTIVE JAPAN PROJECT主催のローコードハッカソンに参加。Power Appsを用いてお祭りに関するクイズができる位置情報アプリを制作。",
     },
   ],
 };
