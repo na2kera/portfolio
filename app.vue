@@ -1,7 +1,9 @@
 <template>
   <div class="min-h-screen bg-gray-900 text-white">
     <!-- ヘッダー -->
-    <header class="bg-black p-4 flex justify-between items-center">
+    <header
+      class="fixed top-0 left-0 right-0 z-50 bg-black p-4 flex justify-between items-center"
+    >
       <div class="text-2xl font-bold">Portfolio</div>
       <div class="flex gap-4">
         <NuxtLink :to="route.path === '/about' ? '/' : '/about'">
