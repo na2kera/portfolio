@@ -44,16 +44,17 @@ if (!project.value) {
         <h2 class="text-2xl font-bold">関連リンク</h2>
 
         <div class="space-y-2">
-          <div v-if="project.urls?.length" class="flex flex-wrap gap-2">
+          <div v-if="project.urls?.length" class="flex flex-wrap gap-3">
             <a
               v-for="(url, index) in project.urls"
               :key="index"
               :href="url"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex items-center px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+              class="inline-flex items-center gap-2 px-5 py-2.5 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-all duration-300 shadow-sm hover:shadow-md"
             >
-              GitHub Repository {{ index + 1 }}
+              <i class="i-mdi-github text-xl"></i>
+              {{ project.urlTitles?.[index] || "GitHubリポジトリ" }}
             </a>
           </div>
 
@@ -62,8 +63,9 @@ if (!project.value) {
             :href="project.slide"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition"
+            class="inline-flex items-center gap-2 px-5 py-2.5 bg-emerald-600 text-white rounded-lg hover:bg-emerald-500 transition-all duration-300 shadow-sm hover:shadow-md"
           >
+            <i class="i-mdi-presentation text-xl"></i>
             スライド
           </a>
 

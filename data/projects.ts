@@ -6,6 +6,7 @@ export interface Project {
   thumbnail: string;
   images: string[];
   urls?: string[];
+  urlTitles?: string[];
   movie?: string;
   slide?: string;
 }
@@ -23,6 +24,11 @@ export const projects: Project[] = [
       "https://github.com/Akira0809/vol.10-2023",
       "https://github.com/na2kera/likeChatgptFront",
     ],
+    urlTitles: [
+      "GitHubリポジトリ（技育博）",
+      "GitHubリポジトリ（技育CAMP）",
+      "GitHubリポジトリ（フロント）",
+    ],
     slide:
       "https://www.canva.com/design/DAFw9HktVmM/XQi_fhjgtZfzbjz9k8oa8A/view?utm_content=DAFw9HktVmM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0ba2a0468c",
   },
@@ -39,6 +45,7 @@ export const projects: Project[] = [
       "/images/projects/refty.png",
     ],
     urls: ["https://github.com/yusei53/refty"],
+    urlTitles: ["GitHubリポジトリ"],
     slide: "",
   },
 ];
