@@ -14,7 +14,7 @@ export interface Profile {
   contacts: {
     platform: string;
     url: string;
-    icon?: string;
+    icon: string;
   }[];
 }
 
@@ -46,10 +46,12 @@ export const profile: Profile = {
   contacts: [
     {
       platform: "GitHub",
+      icon: "/images/icons/github.svg",
       url: "https://github.com/na2kera",
     },
     {
       platform: "Twitter",
+      icon: "/images/icons/twitter.svg",
       url: "https://x.com/na2kera_0510",
     },
   ],

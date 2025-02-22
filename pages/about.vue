@@ -53,18 +53,21 @@ import { profile } from "~/data/profile";
 
     <!-- コンタクト -->
     <div>
-      <h2 class="text-2xl font-bold mb-6">Contact</h2>
+      <h2 class="text-2xl font-bold mb-6">SNS</h2>
       <div class="flex gap-4">
-        <a
+        <NuxtLink
           v-for="contact in profile.contacts"
           :key="contact.platform"
-          :href="contact.url"
+          :to="contact.url"
           target="_blank"
           rel="noopener noreferrer"
-          class="px-4 py-2 bg-gray-700 rounded-lg hover:bg-gray-600 transition"
         >
-          {{ contact.platform }}
-        </a>
+          <img
+            :src="contact.icon"
+            :alt="contact.platform"
+            class="w-8 h-8 brightness-0 invert"
+          />
+        </NuxtLink>
       </div>
     </div>
   </div>
