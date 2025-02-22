@@ -16,6 +16,11 @@ export interface Profile {
     url: string;
     icon: string;
   }[];
+  timeline: {
+    date: string;
+    title: string;
+    description: string;
+  }[];
 }
 
 export const profile: Profile = {
@@ -58,6 +63,18 @@ export const profile: Profile = {
       platform: "Twitter",
       icon: "/images/icons/twitter.svg",
       url: "https://x.com/na2kera_0510",
+    },
+  ],
+  timeline: [
+    {
+      date: "2023",
+      title: "成蹊大学入学",
+      description: "成蹊大学理工学部理工学科データ数理専攻に入学",
+    },
+    {
+      date: "2023",
+      title: "成蹊大学入学",
+      description: "成蹊大学理工学部理工学科データ数理専攻に入学",
     },
   ],
 };

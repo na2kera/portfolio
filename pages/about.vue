@@ -51,6 +51,32 @@ import { profile } from "~/data/profile";
       </div>
     </div>
 
+    <!-- タイムライン -->
+    <div class="mb-12">
+      <h2 class="text-2xl font-bold mb-6">Timeline</h2>
+      <div class="relative space-y-8">
+        <!-- 縦線 -->
+        <div class="absolute left-4 top-5 h-full w-0.5 bg-gray-700"></div>
+
+        <div
+          v-for="(event, index) in profile.timeline"
+          :key="index"
+          class="relative pl-12"
+        >
+          <!-- ドット -->
+          <div
+            class="absolute left-3 top-5 h-3 w-3 rounded-full bg-gray-700 transform -translate-x-1/2"
+          ></div>
+
+          <div class="bg-gray-800 rounded-lg p-4">
+            <div class="text-sm text-gray-400 mb-2">{{ event.date }}</div>
+            <h3 class="text-lg font-semibold mb-2">{{ event.title }}</h3>
+            <p class="text-gray-300">{{ event.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- コンタクト -->
     <div>
       <h2 class="text-2xl font-bold mb-6">SNS</h2>
