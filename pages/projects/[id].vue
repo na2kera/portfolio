@@ -51,10 +51,12 @@ if (!project.value) {
               :href="url"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex items-center gap-2 px-5 py-2.5 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-all duration-300 shadow-sm hover:shadow-md"
+              class="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-all duration-300 shadow-sm hover:shadow-md h-10"
             >
               <i class="i-mdi-github text-xl"></i>
-              {{ project.urlTitles?.[index] || "GitHubリポジトリ" }}
+              <span class="leading-none">{{
+                project.urlTitles?.[index] || "GitHubリポジトリ"
+              }}</span>
             </a>
           </div>
 
@@ -63,10 +65,10 @@ if (!project.value) {
             :href="project.slide"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center gap-2 px-5 py-2.5 bg-emerald-600 text-white rounded-lg hover:bg-emerald-500 transition-all duration-300 shadow-sm hover:shadow-md"
+            class="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-emerald-600 text-white rounded-lg hover:bg-emerald-500 transition-all duration-300 shadow-sm hover:shadow-md h-10"
           >
             <i class="i-mdi-presentation text-xl"></i>
-            スライド
+            <span class="leading-none">スライド</span>
           </a>
 
           <div v-if="project.movie" class="aspect-video">
