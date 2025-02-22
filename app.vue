@@ -17,7 +17,7 @@
     </header>
 
     <!-- メインコンテンツ -->
-    <main>
+    <main class="pt-20">
       <NuxtPage />
     </main>
   </div>
