@@ -56,7 +56,9 @@ import { profile } from "~/data/profile";
       <h2 class="text-2xl font-bold mb-6">Timeline</h2>
       <div class="relative space-y-8">
         <!-- 縦線 -->
-        <div class="absolute left-4 top-5 h-full w-0.5 bg-gray-700"></div>
+        <div
+          class="absolute left-4 top-8 h-[calc(100%-2rem)] w-0.5 bg-gray-700"
+        ></div>
 
         <div
           v-for="(event, index) in profile.timeline"
@@ -65,7 +67,7 @@ import { profile } from "~/data/profile";
         >
           <!-- ドット -->
           <div
-            class="absolute left-3 top-5 h-3 w-3 rounded-full bg-gray-700 transform -translate-x-1/2"
+            class="absolute left-4 top-1/2 h-3 w-3 rounded-full bg-gray-700 transform -translate-x-1/2 -translate-y-1/2"
           ></div>
 
           <div class="bg-gray-800 rounded-lg p-4">
