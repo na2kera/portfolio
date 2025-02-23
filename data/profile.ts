@@ -145,6 +145,12 @@ export const profile: Profile = {
         "フェンリル株式会社で一週間のサマーインターンに参加。研修用プロダクトの新規機能追加、バグ修正等を行った。",
     },
     {
+      date: "2024年 9月",
+      title: "PeachTech内のハッカソンに参加",
+      description:
+        "PeachTech内のメンバーでハッカソンに参加。開発をリードしながら「みんトレ」を制作した。",
+    },
+    {
       date: "2024年 11月",
       title: "技育展決勝大会で登壇",
       description:
