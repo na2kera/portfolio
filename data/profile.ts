@@ -30,15 +30,28 @@ export const profile: Profile = {
   skills: [
     {
       category: "プログラミング言語",
-      items: ["TypeScript", "JavaScript", "Python", "Java"],
+      items: [
+        "/images/icons/typescript.svg",
+        "/images/icons/javascript.svg",
+        "/images/icons/python.svg",
+        "/images/icons/ruby.svg",
+      ],
     },
     {
       category: "フレームワーク",
-      items: ["React", "Next.js", "Nuxt.js", "Vue.js"],
+      items: [
+        "/images/icons/react.svg",
+        "/images/icons/nextjs.svg",
+        "/images/icons/express.svg",
+        "/images/icons/vue.svg",
+        "/images/icons/nuxtjs.svg",
+        "/images/icons/rails.svg",
+        "/images/icons/fastapi.svg",
+      ],
     },
     {
       category: "その他ツール",
-      items: ["Git", "Notion", "Cursor"],
+      items: ["/images/icons/git.svg", "/images/icons/notion.svg"],
     },
   ],
   education: [

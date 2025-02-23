@@ -23,13 +23,12 @@ import { profile } from "~/data/profile";
         <div v-for="skillSet in profile.skills" :key="skillSet.category">
           <h3 class="text-xl font-semibold mb-3">{{ skillSet.category }}</h3>
           <div class="flex flex-wrap gap-2">
-            <span
+            <img
               v-for="skill in skillSet.items"
-              :key="skill"
-              class="px-3 py-1 bg-gray-700 rounded-full text-sm"
-            >
-              {{ skill }}
-            </span>
+              :src="skill"
+              :alt="skill"
+              class="w-12 h-12"
+            />
           </div>
         </div>
       </div>
