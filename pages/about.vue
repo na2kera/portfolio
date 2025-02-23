@@ -6,6 +6,11 @@ import { profile } from "~/data/profile";
   <div class="max-w-4xl mx-auto px-4 py-12">
     <!-- プロフィールヘッダー -->
     <div class="text-center mb-12">
+      <img
+        :src="profile.avatar"
+        :alt="profile.name"
+        class="w-24 h-24 rounded-full mx-auto mb-4"
+      />
       <h1 class="text-4xl font-bold mb-4">{{ profile.name }}</h1>
       <p class="text-xl text-gray-600">{{ profile.title }}</p>
     </div>
@@ -23,13 +28,12 @@ import { profile } from "~/data/profile";
         <div v-for="skillSet in profile.skills" :key="skillSet.category">
           <h3 class="text-xl font-semibold mb-3">{{ skillSet.category }}</h3>
           <div class="flex flex-wrap gap-2">
-            <span
+            <img
               v-for="skill in skillSet.items"
-              :key="skill"
-              class="px-3 py-1 bg-gray-700 rounded-full text-sm"
-            >
-              {{ skill }}
-            </span>
+              :src="skill"
+              :alt="skill"
+              class="w-12 h-12"
+            />
           </div>
         </div>
       </div>
