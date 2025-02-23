@@ -79,4 +79,23 @@ export const projects: Project[] = [
     slide:
       "https://www.canva.com/design/DAGV8iQnDEo/M1P3i-p3hZWwmE2T1bWAkw/view?utm_content=DAGV8iQnDEo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h89f3385436",
   },
+  {
+    id: 4,
+    title: "phono!",
+    date: "2023.11~",
+    description: "プロジェクトの説明文がここに入ります",
+    thumbnail: "/images/projects/phono.png",
+    images: [
+      "/images/projects/phono.png",
+      "/images/projects/phono-2.png",
+      "/images/projects/phono-3.png",
+    ],
+    urls: [
+      "https://github.com/E-moL0587/20231027",
+      "https://pho-no20231027.vercel.app/",
+    ],
+    urlTitles: ["GitHubリポジトリ", "プロダクト"],
+    slide:
+      "https://www.canva.com/design/DAFzCf3DnMM/adzS-YSQJ3hCl7Xhu7aJKw/view?utm_content=DAFzCf3DnMM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7819385515",
+  },
 ];
