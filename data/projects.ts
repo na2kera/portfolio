@@ -167,4 +167,21 @@ export const projects: Project[] = [
     urls: ["https://keyaki-project.vercel.app/home"],
     urlTitles: ["プロダクト"],
   },
+  {
+    id: 10,
+    title: "ここめも",
+    date: "2024.1~",
+    description: "プロジェクトの説明文がここに入ります",
+    thumbnail: "/images/projects/kokomemo.png",
+    images: [
+      "/images/projects/kokomemo.png",
+      "/images/projects/kokomemo-2.png",
+      "/images/projects/kokomemo-3.png",
+    ],
+    urls: [
+      "https://github.com/na2kera/kokomemo",
+      "https://kokomemo.vercel.app/",
+    ],
+    urlTitles: ["GitHubリポジトリ", "プロダクト"],
+  },
 ];
