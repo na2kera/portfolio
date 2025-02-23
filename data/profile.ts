@@ -127,5 +127,51 @@ export const profile: Profile = {
       description:
         "第一回のProgateハッカソンに参加。初めてチームをリードして保護犬、保護猫の里親募集ができるサイトを開発した。",
     },
+    {
+      date: "2024年 7月",
+      title: "「GeekLink」で技育博に参加",
+      description: "5月に制作した「GeekLink」を継続開発し、技育博に参加した。",
+    },
+    {
+      date: "2024年 8月",
+      title: "株式会社TAIANで一週間のサマーインターン",
+      description:
+        "株式会社TAIANで一週間のサマーインターンに参加。フロントエンドのDDD化を行った。",
+    },
+    {
+      date: "2024年 9月",
+      title: "フェンリル株式会社で一週間のサマーインターン",
+      description:
+        "フェンリル株式会社で一週間のサマーインターンに参加。研修用プロダクトの新規機能追加、バグ修正等を行った。",
+    },
+    {
+      date: "2024年 11月",
+      title: "技育展決勝大会で登壇",
+      description:
+        "「GeekLink」を継続開発し、技育展決勝大会に進出。TOKYO NODE HALLでピッチを行った。",
+    },
+    {
+      date: "2024年 12月",
+      title: "学生団体コラボイベントで登壇",
+      description:
+        "自身が所属しているPeachTechと、同じく学生団体のPACKERのコラボLTイベントで登壇した。",
+    },
+    {
+      date: "2024年 12月",
+      title: "大学から特別奨励賞を受賞",
+      description: "一年間の活動を評価され、成蹊大学から特別奨励賞を受賞。",
+    },
+    {
+      date: "2024年 1月",
+      title: "TechTrainのイベント「つよナレ」で登壇",
+      description:
+        "TechTrainのイベント「つよナレ」にて学生枠で登壇。GeekLinkでのチーム開発について発表した。",
+    },
+    {
+      date: "2025年 2月",
+      title: "「リフティ」で技育博に参加",
+      description:
+        "PeachTech内で開発していた「リフティ」で技育博に参加。サイバーエージェント賞を受賞した。",
+    },
   ],
 };
