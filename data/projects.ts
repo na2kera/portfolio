@@ -134,11 +134,15 @@ export const projects: Project[] = [
   {
     id: 7,
     title: "ポートフォリオ",
-    date: "2024.11~",
+    date: "2025.2~",
     description: "プロジェクトの説明文がここに入ります",
     thumbnail: "/images/projects/portfolio.png",
     images: ["/images/projects/portfolio.png"],
-    urls: ["https://github.com/na2kera/portfolio", "https://na2kera.com/"],
+    urls: [
+      "https://github.com/na2kera/portfolio",
+      "https://portfolio-psi-eight-21.vercel.app/",
+    ],
+    urlTitles: ["GitHubリポジトリ", "ポートフォリオ"],
   },
   {
     id: 8,
