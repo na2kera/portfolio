@@ -1,5 +1,6 @@
 export interface Profile {
   name: string;
+  avatar: string;
   title: string;
   bio: string;
   skills: {
@@ -25,6 +26,7 @@ export interface Profile {
 
 export const profile: Profile = {
   name: "ぴーなっつ",
+  avatar: "/images/icons/avatar.jpg",
   title: "学生エンジニア",
   bio: "27卒の学生エンジニア。フロントエンドをメインにしています。Cursorが好き。",
   skills: [

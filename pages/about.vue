@@ -6,6 +6,11 @@ import { profile } from "~/data/profile";
   <div class="max-w-4xl mx-auto px-4 py-12">
     <!-- プロフィールヘッダー -->
     <div class="text-center mb-12">
+      <img
+        :src="profile.avatar"
+        :alt="profile.name"
+        class="w-24 h-24 rounded-full mx-auto mb-4"
+      />
       <h1 class="text-4xl font-bold mb-4">{{ profile.name }}</h1>
       <p class="text-xl text-gray-600">{{ profile.title }}</p>
     </div>
