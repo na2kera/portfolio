@@ -113,4 +113,22 @@ export const projects: Project[] = [
     urls: ["https://github.com/na2kera/gkpt", "https://gkpt.vercel.app/"],
     urlTitles: ["GitHubリポジトリ", "プロダクト"],
   },
+  {
+    id: 6,
+    title: "里親募集サイト",
+    date: "2024.5~",
+    description: "プロジェクトの説明文がここに入ります",
+    thumbnail: "/images/projects/satooya.png",
+    images: [
+      "/images/projects/satooya.png",
+      "/images/projects/satooya-2.png",
+      "/images/projects/satooya-3.png",
+      "/images/projects/satooya-4.png",
+    ],
+    urls: [
+      "https://github.com/na2kera/progate_hack",
+      "https://topaz.dev/projects/a490dd57f2b6a224150c",
+    ],
+    urlTitles: ["GitHubリポジトリ", "Topa'z"],
+  },
 ];
