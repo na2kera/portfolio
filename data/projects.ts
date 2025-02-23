@@ -184,4 +184,18 @@ export const projects: Project[] = [
     ],
     urlTitles: ["GitHubリポジトリ", "プロダクト"],
   },
+  {
+    id: 11,
+    title: "Machiスタ",
+    date: "2024.8~",
+    description: "プロジェクトの説明文がここに入ります",
+    thumbnail: "/images/projects/machista.png",
+    images: ["/images/projects/machista.png"],
+    urls: [
+      "https://github.com/na2kera/opendata-hackathon",
+      "https://odhackathon.metro.tokyo.lg.jp/collection/57/",
+    ],
+    urlTitles: ["GitHubリポジトリ", "プロダクト紹介"],
+    movie: "/videos/projects/machista.mp4",
+  },
 ];
