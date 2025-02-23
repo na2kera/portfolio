@@ -154,4 +154,17 @@ export const projects: Project[] = [
     urls: ["https://github.com/na2kera/LINEbot0810"],
     urlTitles: ["GitHubリポジトリ"],
   },
+  {
+    id: 9,
+    title: "欅祭プロダクト紹介",
+    date: "2023.11~",
+    description: "プロジェクトの説明文がここに入ります",
+    thumbnail: "/images/projects/productlist.png",
+    images: [
+      "/images/projects/productlist.png",
+      "/images/projects/productlist-2.png",
+    ],
+    urls: ["https://keyaki-project.vercel.app/home"],
+    urlTitles: ["プロダクト"],
+  },
 ];
