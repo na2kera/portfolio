@@ -196,6 +196,24 @@ export const projects: Project[] = [
       "https://odhackathon.metro.tokyo.lg.jp/collection/57/",
     ],
     urlTitles: ["GitHubリポジトリ", "プロダクト紹介"],
+    slide:
+      "https://www.canva.com/design/DAGO1cHlHNI/SoqxPeQY0EhvjDvHd_r4XA/view?utm_content=DAGO1cHlHNI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h224bb025f2",
     movie: "/videos/projects/machista.mp4",
+  },
+  {
+    id: 12,
+    title: "みんトレ",
+    date: "2024.8~",
+    description: "プロジェクトの説明文がここに入ります",
+    thumbnail: "/images/projects/mintore.png",
+    images: [
+      "/images/projects/mintore.png",
+      "/images/projects/mintore-2.png",
+      "/images/projects/mintore-3.png",
+    ],
+    urls: ["https://github.com/na2kera/mintore"],
+    urlTitles: ["GitHubリポジトリ"],
+    slide:
+      "https://www.canva.com/design/DAGQU5GNse0/3WMyKfzZ2VZvE1rAVGfqfw/view?utm_content=DAGQU5GNse0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0264d412de",
   },
 ];
