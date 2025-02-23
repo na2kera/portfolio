@@ -98,4 +98,19 @@ export const projects: Project[] = [
     slide:
       "https://www.canva.com/design/DAFzCf3DnMM/adzS-YSQJ3hCl7Xhu7aJKw/view?utm_content=DAFzCf3DnMM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7819385515",
   },
+  {
+    id: 5,
+    title: "gkpt",
+    date: "2023.11~",
+    description: "プロジェクトの説明文がここに入ります",
+    thumbnail: "/images/projects/gkpt-3.png",
+    images: [
+      "/images/projects/gkpt.png",
+      "/images/projects/gkpt-2.png",
+      "/images/projects/gkpt-3.png",
+      "/images/projects/gkpt-4.png",
+    ],
+    urls: ["https://github.com/na2kera/gkpt", "https://gkpt.vercel.app/"],
+    urlTitles: ["GitHubリポジトリ", "プロダクト"],
+  },
 ];
