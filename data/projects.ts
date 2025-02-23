@@ -131,4 +131,23 @@ export const projects: Project[] = [
     ],
     urlTitles: ["GitHubリポジトリ", "Topa'z"],
   },
+  {
+    id: 7,
+    title: "ポートフォリオ",
+    date: "2024.11~",
+    description: "プロジェクトの説明文がここに入ります",
+    thumbnail: "/images/projects/portfolio.png",
+    images: ["/images/projects/portfolio.png"],
+    urls: ["https://github.com/na2kera/portfolio", "https://na2kera.com/"],
+  },
+  {
+    id: 8,
+    title: "LINEbot",
+    date: "2023.8~",
+    description: "プロジェクトの説明文がここに入ります",
+    thumbnail: "/images/projects/linebot.png",
+    images: ["/images/projects/linebot.png"],
+    urls: ["https://github.com/na2kera/LINEbot0810"],
+    urlTitles: ["GitHubリポジトリ"],
+  },
 ];
