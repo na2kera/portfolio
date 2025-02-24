@@ -35,13 +35,16 @@ const closeModal = () => {
   <div class="max-w-4xl mx-auto px-4 py-8">
     <div v-if="project" class="space-y-8">
       <!-- プロジェクトタイトルと日付 -->
-      <div class="text-center">
+      <div class="text-center opacity-0 animate-fade-in">
         <h1 class="text-3xl font-bold mb-2">{{ project.title }}</h1>
         <p class="text-gray-600">{{ project.date }}</p>
       </div>
 
       <!-- プロジェクト画像ギャラリー -->
-      <div class="w-full h-[calc(100vw*3/4)] max-h-[500px]">
+      <div
+        class="w-full h-[calc(100vw*3/4)] max-h-[500px] opacity-0 animate-fade-in"
+        style="animation-delay: 200ms"
+      >
         <Swiper
           :modules="[Navigation, Pagination, Autoplay]"
           :slides-per-view="1"
@@ -88,14 +91,18 @@ const closeModal = () => {
       </div>
 
       <!-- プロジェクト説明 -->
-      <div class="prose max-w-none">
+      <div
+        class="prose max-w-none opacity-0 animate-fade-in"
+        style="animation-delay: 400ms"
+      >
         <p>{{ project.description }}</p>
       </div>
 
       <!-- 関連リンク -->
       <div
         v-if="project.urls?.length || project.slide || project.movie"
-        class="space-y-4"
+        class="space-y-4 opacity-0 animate-fade-in"
+        style="animation-delay: 600ms"
       >
         <h2 class="text-2xl font-bold">関連リンク</h2>
 
@@ -130,7 +137,11 @@ const closeModal = () => {
       </div>
 
       <!-- プロジェクト動画 -->
-      <div v-if="project.movie">
+      <div
+        v-if="project.movie"
+        class="opacity-0 animate-fade-in"
+        style="animation-delay: 800ms"
+      >
         <h2 class="text-2xl font-bold">プロジェクト動画</h2>
         <div v-if="project.movie" class="aspect-video">
           <iframe
@@ -159,5 +170,46 @@ const closeModal = () => {
 /* モーダル表示時にスクロールを無効化 */
 :deep(body.modal-open) {
   overflow: hidden;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* スライダーのフェードイン */
+:deep(.swiper-slide) {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+:deep(.swiper-slide-active) {
+  opacity: 1;
+}
+
+/* モーダルのアニメーション */
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal-content {
+  animation: modalFadeIn 0.3s ease-out forwards;
 }
 </style>
