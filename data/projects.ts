@@ -257,4 +257,18 @@ export const projects: Project[] = [
     ],
     urlTitles: ["GitHubリポジトリ", "プロダクト"],
   },
+  {
+    id: 16,
+    title: "モーニングセット予約システム",
+    date: "2024.12~",
+    description: "プロジェクトの説明文がここに入ります",
+    thumbnail: "/images/projects/morning.png",
+    images: ["/images/projects/morning.png"],
+    urls: [
+      "https://github.com/na2kera/breakfast-order",
+      "https://breakfast-order-two.vercel.app/",
+    ],
+    urlTitles: ["GitHubリポジトリ", "プロダクト"],
+    movie: "/videos/projects/morning.mp4",
+  },
 ];
