@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import { projects } from "~/data/projects";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const route = useRoute();
 const projectId = parseInt(route.params.id as string);
@@ -21,14 +26,24 @@ if (!project.value) {
       </div>
 
       <!-- プロジェクト画像ギャラリー -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <img
-          v-for="(image, index) in project.images"
-          :key="index"
-          :src="image"
-          :alt="`${project.title} image ${index + 1}`"
-          class="w-full h-64 object-cover rounded-lg"
-        />
+      <div class="w-full h-[400px]">
+        <Swiper
+          :modules="[Navigation, Pagination, Autoplay]"
+          :slides-per-view="1"
+          :space-between="30"
+          :navigation="true"
+          :pagination="{ clickable: true }"
+          :autoplay="{ delay: 3000, disableOnInteraction: false }"
+          class="w-full h-full rounded-lg"
+        >
+          <SwiperSlide v-for="(image, index) in project.images" :key="index">
+            <img
+              :src="image"
+              :alt="`${project.title} image ${index + 1}`"
+              class="w-full h-full object-cover"
+            />
+          </SwiperSlide>
+        </Swiper>
       </div>
 
       <!-- プロジェクト説明 -->
@@ -89,3 +104,14 @@ if (!project.value) {
     </div>
   </div>
 </template>
+
+<style scoped>
+:deep(.swiper-button-next),
+:deep(.swiper-button-prev) {
+  color: #f97316; /* orange-500 */
+}
+
+:deep(.swiper-pagination-bullet-active) {
+  background: #f97316; /* orange-500 */
+}
+</style>
