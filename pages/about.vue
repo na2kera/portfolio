@@ -1,5 +1,27 @@
 <script setup lang="ts">
 import { profile } from "~/data/profile";
+
+useHead({
+  title: "About | ぴーなっつのポートフォリオ",
+  meta: [
+    {
+      name: "description",
+      content: "ぴーなっつの経歴やスキルなどを紹介しています。",
+    },
+    {
+      property: "og:title",
+      content: "About | ぴーなっつのポートフォリオ",
+    },
+    {
+      property: "og:description",
+      content: "ぴーなっつの経歴やスキルなどを紹介しています。",
+    },
+    {
+      property: "og:url",
+      content: "https://portfolio-psi-eight-21.vercel.app/about",
+    },
+  ],
+});
 </script>
 
 <template>
