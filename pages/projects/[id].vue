@@ -26,7 +26,7 @@ if (!project.value) {
       </div>
 
       <!-- プロジェクト画像ギャラリー -->
-      <div class="w-full h-[400px]">
+      <div class="w-full h-[calc(100vw*3/4)] max-h-[500px]">
         <Swiper
           :modules="[Navigation, Pagination, Autoplay]"
           :slides-per-view="1"
