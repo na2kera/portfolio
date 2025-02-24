@@ -14,6 +14,21 @@ const project = computed(() => projects.find((p) => p.id === projectId));
 if (!project.value) {
   throw createError({ statusCode: 404, message: "Project not found" });
 }
+
+// モーダル用の状態管理
+const isModalOpen = ref(false);
+const selectedImageIndex = ref(0);
+
+// モーダルを開く関数
+const openModal = (index: number) => {
+  selectedImageIndex.value = index;
+  isModalOpen.value = true;
+};
+
+// モーダルを閉じる関数
+const closeModal = () => {
+  isModalOpen.value = false;
+};
 </script>
 
 <template>
@@ -36,7 +51,12 @@ if (!project.value) {
           :autoplay="{ delay: 3000, disableOnInteraction: false }"
           class="w-full h-full rounded-lg"
         >
-          <SwiperSlide v-for="(image, index) in project.images" :key="index">
+          <SwiperSlide
+            v-for="(image, index) in project.images"
+            :key="index"
+            class="cursor-pointer"
+            @click="openModal(index)"
+          >
             <img
               :src="image"
               :alt="`${project.title} image ${index + 1}`"
@@ -44,6 +64,27 @@ if (!project.value) {
             />
           </SwiperSlide>
         </Swiper>
+      </div>
+
+      <!-- 画像モーダル -->
+      <div
+        v-if="isModalOpen"
+        class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75"
+        @click="closeModal"
+      >
+        <div class="relative max-w-[90vw] max-h-[90vh]">
+          <img
+            :src="project.images[selectedImageIndex]"
+            :alt="`${project.title} image ${selectedImageIndex + 1}`"
+            class="max-w-full max-h-[90vh] object-contain"
+          />
+          <button
+            class="absolute top-4 right-4 text-white bg-black bg-opacity-50 rounded-full p-2 hover:bg-opacity-75"
+            @click="closeModal"
+          >
+            <i class="i-mdi-close text-2xl"></i>
+          </button>
+        </div>
       </div>
 
       <!-- プロジェクト説明 -->
@@ -113,5 +154,10 @@ if (!project.value) {
 
 :deep(.swiper-pagination-bullet-active) {
   background: #f97316; /* orange-500 */
+}
+
+/* モーダル表示時にスクロールを無効化 */
+:deep(body.modal-open) {
+  overflow: hidden;
 }
 </style>
