@@ -10,7 +10,7 @@
       <div class="flex gap-4">
         <NuxtLink :to="route.path === '/about' ? '/' : '/about'">
           <button
-            class="px-4 py-2 rounded-full border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white transition-colors duration-300"
+            class="relative px-7 py-3.5 text-base font-bold text-white border-3 border-orange-500 cursor-pointer overflow-hidden z-[1] transition-colors duration-300 before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-orange-500 before:-translate-x-full before:transition-transform before:duration-300 before:ease-in-out before:-z-[1] hover:before:translate-x-0"
           >
             {{ route.path === "/about" ? "プロダクト一覧" : "私について" }}
           </button>
