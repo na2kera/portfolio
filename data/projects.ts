@@ -226,5 +226,7 @@ export const projects: Project[] = [
     urls: ["https://github.com/na2kera/predict-price-frontend"],
     urlTitles: ["GitHubリポジトリ（フロントエンド)"],
     movie: "/videos/projects/yachin.mp4",
+    slide:
+      "https://www.canva.com/design/DAGZCSXs7-4/VOEeiaXxnvEjPKMrLLfYrg/view?utm_content=DAGZCSXs7-4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0b189f2846",
   },
 ];
