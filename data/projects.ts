@@ -229,4 +229,15 @@ export const projects: Project[] = [
     slide:
       "https://www.canva.com/design/DAGZCSXs7-4/VOEeiaXxnvEjPKMrLLfYrg/view?utm_content=DAGZCSXs7-4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0b189f2846",
   },
+  {
+    id: 14,
+    title: "ライムクイズ",
+    date: "2024.11~",
+    description: "プロジェクトの説明文がここに入ります",
+    thumbnail: "/images/projects/rhyme.png",
+    images: ["/images/projects/rhyme.png", "/images/projects/rhyme-2.png"],
+    urls: ["https://github.com/na2kera/rhyme"],
+    urlTitles: ["GitHubリポジトリ"],
+    movie: "/videos/projects/rhyme.mp4",
+  },
 ];
