@@ -271,4 +271,22 @@ export const projects: Project[] = [
     urlTitles: ["GitHubリポジトリ", "プロダクト"],
     movie: "/videos/projects/morning.mp4",
   },
+  {
+    id: 17,
+    title: "オリジナルパーセントバルーン",
+    date: "2024.11~",
+    description: "プロジェクトの説明文がここに入ります",
+    thumbnail: "/images/projects/percentballoon.png",
+    images: [
+      "/images/projects/percentballoon.png",
+      "/images/projects/percentballoon-2.png",
+      "/images/projects/percentballoon-3.png",
+    ],
+    urls: [
+      "https://github.com/na2kera/percent-balloon",
+      "https://percent-balloon-hazel.vercel.app/",
+    ],
+    urlTitles: ["GitHubリポジトリ", "プロダクト"],
+    movie: "/videos/projects/percentballoon.mp4",
+  },
 ];
