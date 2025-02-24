@@ -9,7 +9,9 @@
           v-for="project in projects"
           :key="project.id"
           :project="project"
-          class="transform hover:scale-105 transition-all duration-300 hover:shadow-xl hover:shadow-orange-500/20"
+          class="transform hover:scale-105 transition-all duration-300 hover:shadow-xl hover:shadow-orange-500/20 opacity-0 translate-y-8"
+          :class="{ 'animate-fade-in-up': true }"
+          :style="{ 'animation-delay': `${project.id * 150}ms` }"
         />
       </div>
     </div>
@@ -19,3 +21,20 @@
 <script setup lang="ts">
 import { projects } from "~/data/projects";
 </script>
+
+<style>
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+</style>
