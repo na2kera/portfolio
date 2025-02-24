@@ -9,7 +9,7 @@
           v-for="project in projects"
           :key="project.id"
           :project="project"
-          class="transform hover:scale-105 transition-all duration-300 hover:shadow-xl hover:shadow-orange-500/20 opacity-0 translate-y-8"
+          class="transform opacity-0 translate-y-8 transition-all duration-500"
           :class="{ 'animate-fade-in-up': true }"
           :style="{ 'animation-delay': `${project.id * 150}ms` }"
         />
