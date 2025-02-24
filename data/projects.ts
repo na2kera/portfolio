@@ -137,7 +137,10 @@ export const projects: Project[] = [
     date: "2025.2~",
     description: "プロジェクトの説明文がここに入ります",
     thumbnail: "/images/projects/portfolio.png",
-    images: ["/images/projects/portfolio.png"],
+    images: [
+      "/images/projects/portfolio.png",
+      "/images/projects/portfolio-2.png",
+    ],
     urls: [
       "https://github.com/na2kera/portfolio",
       "https://portfolio-psi-eight-21.vercel.app/",
