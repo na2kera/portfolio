@@ -29,6 +29,39 @@ const openModal = (index: number) => {
 const closeModal = () => {
   isModalOpen.value = false;
 };
+
+// OGP設定
+useHead(() => ({
+  title: project.value
+    ? `${project.value.title} | ぴーなっつのポートフォリオ`
+    : "Project Not Found",
+  meta: [
+    {
+      name: "description",
+      content: project.value?.description || "プロジェクトの詳細ページです。",
+    },
+    {
+      property: "og:title",
+      content: project.value
+        ? `${project.value.title} | ぴーなっつのポートフォリオ`
+        : "Project Not Found",
+    },
+    {
+      property: "og:description",
+      content: project.value?.description || "プロジェクトの詳細ページです。",
+    },
+    {
+      property: "og:image",
+      content: project.value
+        ? project.value.thumbnail
+        : "https://portfolio-psi-eight-21.vercel.app/ogp.jpg",
+    },
+    {
+      property: "og:url",
+      content: `https://portfolio-psi-eight-21.vercel.app/projects/${projectId}`,
+    },
+  ],
+}));
 </script>
 
 <template>
