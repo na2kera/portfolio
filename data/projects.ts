@@ -216,4 +216,15 @@ export const projects: Project[] = [
     slide:
       "https://www.canva.com/design/DAGQU5GNse0/3WMyKfzZ2VZvE1rAVGfqfw/view?utm_content=DAGQU5GNse0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0264d412de",
   },
+  {
+    id: 13,
+    title: "家賃予測システム",
+    date: "2024.12~",
+    description: "プロジェクトの説明文がここに入ります",
+    thumbnail: "/images/projects/yachin.png",
+    images: ["/images/projects/yachin.png"],
+    urls: ["https://github.com/na2kera/predict-price-frontend"],
+    urlTitles: ["GitHubリポジトリ（フロントエンド)"],
+    movie: "/videos/projects/yachin.mp4",
+  },
 ];
