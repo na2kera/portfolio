@@ -40,9 +40,9 @@ export const projects: Project[] = [
     thumbnail: "/images/projects/refty.png",
     images: [
       "/images/projects/refty.png",
-      "/images/projects/refty.png",
-      "/images/projects/refty.png",
-      "/images/projects/refty.png",
+      "/images/projects/refty-2.png",
+      "/images/projects/refty-3.png",
+      "/images/projects/refty-4.png",
     ],
     urls: [
       "https://github.com/yusei53/refty",
