@@ -240,4 +240,21 @@ export const projects: Project[] = [
     urlTitles: ["GitHubリポジトリ"],
     movie: "/videos/projects/rhyme.mp4",
   },
+  {
+    id: 15,
+    title: "吉祥寺サイファー",
+    date: "2024.10~",
+    description: "プロジェクトの説明文がここに入ります",
+    thumbnail: "/images/projects/kichijoji.png",
+    images: [
+      "/images/projects/kichijoji.png",
+      "/images/projects/kichijoji-2.png",
+      "/images/projects/kichijoji-3.png",
+    ],
+    urls: [
+      "https://github.com/yoshiddddd/kichijoji_cipher",
+      "https://kichijojicipherfrontend.vercel.app/",
+    ],
+    urlTitles: ["GitHubリポジトリ", "プロダクト"],
+  },
 ];
