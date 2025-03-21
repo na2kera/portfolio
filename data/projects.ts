@@ -16,7 +16,7 @@ export const projects: Project[] = [
     id: 1,
     title: "3AIよれば文殊の知恵",
     date: "2023.10~",
-    description: "プロジェクトの説明文がここに入ります",
+    description: "",
     thumbnail: "/images/projects/3AI.webp",
     images: ["/images/projects/3AI.webp", "/images/projects/3AI-2.png"],
     urls: [
@@ -36,7 +36,7 @@ export const projects: Project[] = [
     id: 2,
     title: "リフティ",
     date: "2024.10~",
-    description: "プロジェクトの説明文がここに入ります",
+    description: "",
     thumbnail: "/images/projects/refty.png",
     images: [
       "/images/projects/refty.png",
@@ -55,7 +55,7 @@ export const projects: Project[] = [
     id: 3,
     title: "GeekLink",
     date: "2024.5~",
-    description: "プロジェクトの説明文がここに入ります",
+    description: "",
     thumbnail: "/images/projects/geeklink.png",
     images: [
       "/images/projects/geeklink.png",
@@ -83,7 +83,7 @@ export const projects: Project[] = [
     id: 4,
     title: "phono!",
     date: "2023.11~",
-    description: "プロジェクトの説明文がここに入ります",
+    description: "",
     thumbnail: "/images/projects/phono.png",
     images: [
       "/images/projects/phono.png",
@@ -102,7 +102,7 @@ export const projects: Project[] = [
     id: 5,
     title: "gkpt",
     date: "2023.11~",
-    description: "プロジェクトの説明文がここに入ります",
+    description: "",
     thumbnail: "/images/projects/gkpt-3.png",
     images: [
       "/images/projects/gkpt.png",
@@ -117,7 +117,7 @@ export const projects: Project[] = [
     id: 6,
     title: "里親募集サイト",
     date: "2024.5~",
-    description: "プロジェクトの説明文がここに入ります",
+    description: "",
     thumbnail: "/images/projects/satooya.png",
     images: [
       "/images/projects/satooya.png",
@@ -135,7 +135,7 @@ export const projects: Project[] = [
     id: 7,
     title: "ポートフォリオ",
     date: "2025.2~",
-    description: "プロジェクトの説明文がここに入ります",
+    description: "",
     thumbnail: "/images/projects/portfolio.png",
     images: [
       "/images/projects/portfolio.png",
@@ -151,7 +151,7 @@ export const projects: Project[] = [
     id: 8,
     title: "LINEbot",
     date: "2023.8~",
-    description: "プロジェクトの説明文がここに入ります",
+    description: "",
     thumbnail: "/images/projects/linebot.png",
     images: ["/images/projects/linebot.png"],
     urls: ["https://github.com/na2kera/LINEbot0810"],
@@ -161,7 +161,7 @@ export const projects: Project[] = [
     id: 9,
     title: "欅祭プロダクト紹介",
     date: "2023.11~",
-    description: "プロジェクトの説明文がここに入ります",
+    description: "",
     thumbnail: "/images/projects/productlist.png",
     images: [
       "/images/projects/productlist.png",
@@ -174,7 +174,7 @@ export const projects: Project[] = [
     id: 10,
     title: "ここめも",
     date: "2024.1~",
-    description: "プロジェクトの説明文がここに入ります",
+    description: "",
     thumbnail: "/images/projects/kokomemo.png",
     images: [
       "/images/projects/kokomemo.png",
@@ -191,7 +191,7 @@ export const projects: Project[] = [
     id: 11,
     title: "Machiスタ",
     date: "2024.8~",
-    description: "プロジェクトの説明文がここに入ります",
+    description: "",
     thumbnail: "/images/projects/machista.png",
     images: ["/images/projects/machista.png"],
     urls: [
@@ -207,7 +207,7 @@ export const projects: Project[] = [
     id: 12,
     title: "みんトレ",
     date: "2024.8~",
-    description: "プロジェクトの説明文がここに入ります",
+    description: "",
     thumbnail: "/images/projects/mintore.png",
     images: [
       "/images/projects/mintore.png",
@@ -223,7 +223,7 @@ export const projects: Project[] = [
     id: 13,
     title: "家賃予測システム",
     date: "2024.12~",
-    description: "プロジェクトの説明文がここに入ります",
+    description: "",
     thumbnail: "/images/projects/yachin.png",
     images: ["/images/projects/yachin.png"],
     urls: ["https://github.com/na2kera/predict-price-frontend"],
@@ -236,7 +236,7 @@ export const projects: Project[] = [
     id: 14,
     title: "ライムクイズ",
     date: "2024.11~",
-    description: "プロジェクトの説明文がここに入ります",
+    description: "",
     thumbnail: "/images/projects/rhyme.png",
     images: ["/images/projects/rhyme.png", "/images/projects/rhyme-2.png"],
     urls: ["https://github.com/na2kera/rhyme"],
@@ -247,7 +247,7 @@ export const projects: Project[] = [
     id: 15,
     title: "吉祥寺サイファー",
     date: "2024.10~",
-    description: "プロジェクトの説明文がここに入ります",
+    description: "",
     thumbnail: "/images/projects/kichijoji.png",
     images: [
       "/images/projects/kichijoji.png",
@@ -264,7 +264,7 @@ export const projects: Project[] = [
     id: 16,
     title: "モーニングセット予約システム",
     date: "2024.12~",
-    description: "プロジェクトの説明文がここに入ります",
+    description: "",
     thumbnail: "/images/projects/morning.png",
     images: ["/images/projects/morning.png"],
     urls: [
@@ -278,7 +278,7 @@ export const projects: Project[] = [
     id: 17,
     title: "オリジナルパーセントバルーン",
     date: "2024.11~",
-    description: "プロジェクトの説明文がここに入ります",
+    description: "",
     thumbnail: "/images/projects/percentballoon.png",
     images: [
       "/images/projects/percentballoon.png",
