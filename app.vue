@@ -1,4 +1,8 @@
 <template>
+  <Head>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <title>Portfolio</title>
+  </Head>
   <div class="min-h-screen bg-gray-900 text-white">
     <!-- ヘッダー -->
     <header
