@@ -30,6 +30,5 @@
 </template>
 
 <script setup lang="ts">
-import { Head } from '@unhead/vue';
 const route = useRoute();
 </script>
