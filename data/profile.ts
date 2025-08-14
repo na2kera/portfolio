@@ -194,5 +194,35 @@ export const profile: Profile = {
       description:
         "PeachTech内で開発していた「リフティ」で技育博に参加。サイバーエージェント賞を受賞した。",
     },
+    {
+      date: "2025年 4月",
+      title: "ワンキャリアの2daysインターンに参加",
+      description:
+        "ワンキャリアの2daysインターンに参加。3人チームで既存プロダクトの追加機能の立案をし、責任者の方の前でプレゼンをした。",
+    },
+    {
+      date: "2025年 6月",
+      title: "株式会社ARCRAの長期インターンを開始。",
+      description:
+        "株式会社ARCRAでバックエンドを中心にAI系の開発を行っている。",
+    },
+    {
+      date: "2025年 7月",
+      title: "「GeekQuest」で技育博に参加",
+      description:
+        "技術系のイベントのレコメンドをするアプリ「GeekQuest」を2人チームで作成し、技育博に参加。",
+    },
+    {
+      date: "2025年 7月",
+      title: "レバレジーズ株式会社の3daysインターンに参加",
+      description:
+        "レバレジーズ株式会社の3daysインターンに参加。既存のプロダクトの新規機能を考え、実装し、責任者の前でプレゼンを行った。",
+    },
+    {
+      date: "2025年 7月",
+      title: "Works Human Intelligenceの1dayインターンに参加",
+      description:
+        "Works Human Intelligenceの1dayインターンに参加。チームで追加機能の開発に取り組んだ。",
+    },
   ],
 };
