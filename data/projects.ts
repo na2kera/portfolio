@@ -81,6 +81,27 @@ export const projects: Project[] = [
   },
   {
     id: 4,
+    title: "AI家賃ナビ",
+    date: "2025.5~",
+    description: "",
+    thumbnail: "/images/projects/ai-rent-navi.png",
+    images: [
+      "/images/projects/ai-rent-navi.png",
+      "/images/projects/ai-rent-navi-2.png",
+    ],
+    urls: [
+      "https://github.com/na2kera/ai-rent-navi-frontend",
+      "https://github.com/Naki-ym/ai-rent-navi-backend",
+    ],
+    urlTitles: [
+      "GitHubリポジトリ（フロント）",
+      "GitHubリポジトリ（バックエンド）",
+    ],
+    slide:
+      "https://www.canva.com/design/DAGsEpiyA3Q/4ZoEGG6ioWfFISjph2xD6g/view?utm_content=DAGsEpiyA3Q&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h424a087eda",
+  },
+  {
+    id: 5,
     title: "phono!",
     date: "2023.11~",
     description: "",
@@ -99,7 +120,7 @@ export const projects: Project[] = [
       "https://www.canva.com/design/DAFzCf3DnMM/adzS-YSQJ3hCl7Xhu7aJKw/view?utm_content=DAFzCf3DnMM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7819385515",
   },
   {
-    id: 5,
+    id: 6,
     title: "gkpt",
     date: "2023.11~",
     description: "",
@@ -114,7 +135,7 @@ export const projects: Project[] = [
     urlTitles: ["GitHubリポジトリ", "プロダクト"],
   },
   {
-    id: 6,
+    id: 7,
     title: "里親募集サイト",
     date: "2024.5~",
     description: "",
@@ -132,7 +153,7 @@ export const projects: Project[] = [
     urlTitles: ["GitHubリポジトリ", "Topa'z"],
   },
   {
-    id: 7,
+    id: 8,
     title: "ポートフォリオ",
     date: "2025.2~",
     description: "",
@@ -148,7 +169,7 @@ export const projects: Project[] = [
     urlTitles: ["GitHubリポジトリ", "ポートフォリオ"],
   },
   {
-    id: 8,
+    id: 9,
     title: "LINEbot",
     date: "2023.8~",
     description: "",
@@ -158,7 +179,7 @@ export const projects: Project[] = [
     urlTitles: ["GitHubリポジトリ"],
   },
   {
-    id: 9,
+    id: 10,
     title: "欅祭プロダクト紹介",
     date: "2023.11~",
     description: "",
@@ -171,7 +192,7 @@ export const projects: Project[] = [
     urlTitles: ["プロダクト"],
   },
   {
-    id: 10,
+    id: 11,
     title: "ここめも",
     date: "2024.1~",
     description: "",
@@ -188,7 +209,7 @@ export const projects: Project[] = [
     urlTitles: ["GitHubリポジトリ", "プロダクト"],
   },
   {
-    id: 11,
+    id: 12,
     title: "Machiスタ",
     date: "2024.8~",
     description: "",
@@ -204,7 +225,7 @@ export const projects: Project[] = [
     movie: "/videos/projects/machista.mp4",
   },
   {
-    id: 12,
+    id: 13,
     title: "みんトレ",
     date: "2024.8~",
     description: "",
@@ -220,7 +241,7 @@ export const projects: Project[] = [
       "https://www.canva.com/design/DAGQU5GNse0/3WMyKfzZ2VZvE1rAVGfqfw/view?utm_content=DAGQU5GNse0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0264d412de",
   },
   {
-    id: 13,
+    id: 14,
     title: "家賃予測システム",
     date: "2024.12~",
     description: "",
@@ -233,7 +254,7 @@ export const projects: Project[] = [
       "https://www.canva.com/design/DAGZCSXs7-4/VOEeiaXxnvEjPKMrLLfYrg/view?utm_content=DAGZCSXs7-4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0b189f2846",
   },
   {
-    id: 14,
+    id: 15,
     title: "ライムクイズ",
     date: "2024.11~",
     description: "",
@@ -244,7 +265,7 @@ export const projects: Project[] = [
     movie: "/videos/projects/rhyme.mp4",
   },
   {
-    id: 15,
+    id: 16,
     title: "吉祥寺サイファー",
     date: "2024.10~",
     description: "",
@@ -261,7 +282,7 @@ export const projects: Project[] = [
     urlTitles: ["GitHubリポジトリ", "プロダクト"],
   },
   {
-    id: 16,
+    id: 17,
     title: "モーニングセット予約システム",
     date: "2024.12~",
     description: "",
@@ -275,7 +296,7 @@ export const projects: Project[] = [
     movie: "/videos/projects/morning.mp4",
   },
   {
-    id: 17,
+    id: 18,
     title: "オリジナルパーセントバルーン",
     date: "2024.11~",
     description: "",
