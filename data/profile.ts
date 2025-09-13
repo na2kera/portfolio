@@ -21,6 +21,7 @@ export interface Profile {
     date: string;
     title: string;
     description: string;
+    urls?: string[];
   }[];
 }
 
@@ -107,6 +108,7 @@ export const profile: Profile = {
       title: "初めてのハッカソンに参加",
       description:
         "技育CAMPマンスリーハッカソンに即席で参加。「3AIよれば文殊の知恵」というプロダクトを制作し、最優秀賞を受賞。",
+      urls: ["https://github.com/Akira0809/vol.10"],
     },
     {
       date: "2023年 11月",
@@ -129,6 +131,10 @@ export const profile: Profile = {
       title: "株式会社YOUTRUSTでインターンを始める",
       description:
         "初めての実務型インターンでReact, Ruby on Railsの経験を積んだ。",
+      urls: [
+        "https://lp.youtrust.jp/",
+        "https://tech.youtrust.co.jp/entry/2024/07/19/164548",
+      ],
     },
     {
       date: "2024年 5月",

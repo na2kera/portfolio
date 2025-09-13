@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import { profile } from "~/data/profile";
+import type { OgpData } from "~/composables/useOgp";
+import { getHostname } from "~/utils/url";
+
+// OGPデータを取得
+const ogpDataMap = ref<Map<string, OgpData>>(await fetchTimelineOgpData(profile.timeline));
 
 useHead({
   title: "About | ぴーなっつのポートフォリオ",
@@ -104,6 +109,60 @@ useHead({
             <div class="text-sm text-gray-400 mb-2">{{ event.date }}</div>
             <h3 class="text-lg font-semibold mb-2">{{ event.title }}</h3>
             <p class="text-gray-300">{{ event.description }}</p>
+            
+            <!-- 複数URL表示 -->
+            <div v-if="event.urls && event.urls.length > 0" class="mt-4 space-y-3">
+              <div 
+                v-for="url in event.urls" 
+                :key="url"
+              >
+                <!-- OGPカード表示 -->
+                <div v-if="ogpDataMap.get(url)">
+                  <a
+                    :href="url"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="block border border-gray-600 rounded-lg overflow-hidden hover:border-gray-500 transition-colors"
+                  >
+                    <div class="flex">
+                      <div v-if="ogpDataMap.get(url)?.image" class="flex-shrink-0 w-24 h-24">
+                        <img
+                          :src="ogpDataMap.get(url)?.image"
+                          :alt="ogpDataMap.get(url)?.title || ''"
+                          class="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div class="flex-1 p-3 min-w-0">
+                        <h4 class="font-medium text-white text-sm line-clamp-2 mb-1">
+                          {{ ogpDataMap.get(url)?.title || url }}
+                        </h4>
+                        <p class="text-gray-400 text-xs line-clamp-2 mb-1">
+                          {{ ogpDataMap.get(url)?.description }}
+                        </p>
+                        <p class="text-gray-500 text-xs truncate">
+                          {{ ogpDataMap.get(url)?.siteName || getHostname(url) }}
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                
+                <!-- URLのみの場合 -->
+                <div v-else>
+                  <a
+                    :href="url"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors text-sm"
+                  >
+                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                    {{ getHostname(url) }}
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -145,5 +204,12 @@ useHead({
 
 .animate-fade-in {
   animation: fadeIn 0.8s ease-out forwards;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 </style>
