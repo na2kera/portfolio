@@ -3,8 +3,20 @@ import { profile } from "~/data/profile";
 import type { OgpData } from "~/composables/useOgp";
 import { getHostname } from "~/utils/url";
 
-// OGPデータを取得
-const ogpDataMap = ref<Map<string, OgpData>>(await fetchTimelineOgpData(profile.timeline));
+// OGPデータを初期は空で用意し、クライアントで非同期取得（初期描画をブロックしない）
+const ogpDataMap = ref<Map<string, OgpData>>(new Map());
+
+const { data: ogpData } = useAsyncData(
+  "timeline-ogp",
+  () => fetchTimelineOgpData(profile.timeline),
+  { server: false, lazy: true }
+);
+
+watchEffect(() => {
+  if (ogpData.value) {
+    ogpDataMap.value = ogpData.value;
+  }
+});
 
 useHead({
   title: "About | ぴーなっつのポートフォリオ",
