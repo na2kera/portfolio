@@ -108,7 +108,7 @@ export const profile: Profile = {
       title: "初めてのハッカソンに参加",
       description:
         "技育CAMPマンスリーハッカソンに即席で参加。「3AIよれば文殊の知恵」というプロダクトを制作し、最優秀賞を受賞。",
-      urls: ["https://github.com/Akira0809/vol.10"],
+      urls: ["https://x.com/na2kera_0510/status/1713489029973553203"],
     },
     {
       date: "2023年 11月",
@@ -119,12 +119,17 @@ export const profile: Profile = {
       date: "2023年 12月",
       title: "成蹊大学賞を受賞",
       description: "一年間の個人の活動が評価され、成蹊大学賞を受賞。",
+      urls: [
+        "https://www.seikei.ac.jp/university/news_topics/2023/16345.html",
+        "https://x.com/PeachTech_0927/status/1737114192111681770",
+      ],
     },
     {
       date: "2023年 12月",
       title: "技育CAMPアドバンスに参加",
       description:
         "10月に制作した「3AIよれば文殊の知恵」をアップデートして技育CAMPアドバンスに参加。CARTA HOLDINGS賞を受賞。",
+      urls: ["https://x.com/na2kera_0510/status/1735979081550967021"],
     },
     {
       date: "2024年 3月",
@@ -141,6 +146,10 @@ export const profile: Profile = {
       title: "技育CAMPマンスリーハッカソンに参加",
       description:
         "Xで参加募集していたメンバーと一緒にハッカソンに参加。「GeekLink」を制作し、努力賞を受賞した。",
+      urls: [
+        "https://x.com/PeachTech_0927/status/1850543124424372501",
+        "https://x.com/na2kera_0510/status/1792123920986055026",
+      ],
     },
     {
       date: "2024年 5月",
@@ -152,6 +161,7 @@ export const profile: Profile = {
       date: "2024年 7月",
       title: "「GeekLink」で技育博に参加",
       description: "5月に制作した「GeekLink」を継続開発し、技育博に参加した。",
+      urls: ["https://x.com/geek_pjt/status/1809450933736329292"],
     },
     {
       date: "2024年 8月",
@@ -176,29 +186,45 @@ export const profile: Profile = {
       title: "技育展決勝大会で登壇",
       description:
         "「GeekLink」を継続開発し、技育展決勝大会に進出。TOKYO NODE HALLでピッチを行った。",
+      urls: [
+        "https://note.supporterz.jp/n/n7e84e3fc0128#7c904a2f-790c-4fb7-8a94-852a51fb4006",
+        "https://x.com/geek_pjt/status/1854093869484482829",
+        "https://x.com/na2kera_0510/status/1855445753365434456",
+        "https://x.com/na2kera_0510/status/1855471491158360462",
+      ],
     },
     {
       date: "2024年 12月",
       title: "学生団体コラボイベントで登壇",
       description:
         "自身が所属しているPeachTechと、同じく学生団体のPACKERのコラボLTイベントで登壇した。",
+      urls: ["https://x.com/PeachTech_0927/status/1867518606353084913"],
     },
     {
       date: "2024年 12月",
       title: "大学から特別奨励賞を受賞",
       description: "一年間の活動を評価され、成蹊大学から特別奨励賞を受賞。",
+      urls: [
+        "https://x.com/PeachTech_0927/status/1869533750658568330",
+        "https://www.seikei.ac.jp/university/realife/event/18666.html",
+      ],
     },
     {
       date: "2024年 1月",
       title: "TechTrainのイベント「つよナレ」で登壇",
       description:
         "TechTrainのイベント「つよナレ」にて学生枠で登壇。GeekLinkでのチーム開発について発表した。",
+      urls: ["https://x.com/na2kera_0510/status/1887840382802956404"],
     },
     {
       date: "2025年 2月",
       title: "「リフティ」で技育博に参加",
       description:
         "PeachTech内で開発していた「リフティ」で技育博に参加。サイバーエージェント賞を受賞した。",
+      urls: [
+        "https://x.com/na2kera_0510/status/1888183465549644206",
+        "https://www.seikei.ac.jp/university/news_topics/2025/18691.html",
+      ],
     },
     {
       date: "2025年 4月",
@@ -211,6 +237,10 @@ export const profile: Profile = {
       title: "株式会社ARCRAの長期インターンを開始。",
       description:
         "株式会社ARCRAでバックエンドを中心にAI系の開発を行っている。",
+      urls: [
+        "https://arcra.jp/",
+        "https://prtimes.jp/main/html/rd/p/000000027.000132533.html",
+      ],
     },
     {
       date: "2025年 7月",
@@ -235,24 +265,28 @@ export const profile: Profile = {
       title: "株式会社BuySell Technologiesの1dayインターンに参加",
       description:
         "ワークショップ型の1dayインターン。AIをフル活用して複数ある課題の中からチームで選択して実装を行なった。個人としてはパフォーマンス改善に取り組み、AIを活用してプロジェクトの調査や時間のかかっている部分の可視化、実装等を行なった。普段考えていることを実際の活用に落とせていいアウトプットができた。",
+      urls: ["https://x.com/na2kera_0510/status/1958500094300295344"],
     },
     {
       date: "2025年 8月",
       title: "ラクスル株式会社の1dayインターンに参加",
       description:
         "1daysのインターン。インターン用に課題が用意されていて、チームでどの課題を実装するか相談し合いながら実装を行なった。主にRuby on Railsでの開発でRailsガイドやメンターの方の力を借りながらメール送信機能の実装を完了させることができた。",
+      urls: ["https://x.com/na2kera_0510/status/1959214631454712102"],
     },
     {
       date: "2025年 8月",
       title: "株式会社SmartHRの4daysインターンに参加",
       description:
         "4daysでテーマに沿ったプロダクトの開発を行った。実際に行なっている一週間のスプリントを4日間で体験するという内容だった。仮説を立ててユーザー想定の社員の方から意見を聞き、レビュー、振り返りを早い速度で回していくアジャイル開発を体験した。チームとしての役割を考えられたインターンだった。",
+      urls: ["https://x.com/na2kera_0510/status/1961401584169992557"],
     },
     {
       date: "2025年 9月",
       title: "サイボウズ株式会社の2weeksインターンに参加",
       description:
         "2週間でkintoneの開発チームに入ってClosureで実装されている一部コンポーネントのReact化を行なった。基本的な動作や、Storybookで触れるように実装、自動テストの実装までを行なった。JavaScript, TypeScript, Reactのベストプラクティスやアンチパターンについて学ぶのと同時に実際のチームに入ってのアジャイル開発を経験して実際にエンジニアとして働くことへのイメージができた。",
+      urls: ["https://x.com/na2kera_0510/status/1966454776104677611"],
     },
     {
       date: "2025年 9月",
