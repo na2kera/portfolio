@@ -179,7 +179,7 @@ export const profile: Profile = {
       date: "2024年 9月",
       title: "PeachTech内のハッカソンに参加",
       description:
-        "PeachTech内のメンバーでハッカソンに参加。開発をリードしながら「みんトレ」を制作した。",
+        "PeachTech内の4人でメンバーを組んでハッカソンに参加。4開発をリードしながら「みんトレ」を制作した。",
     },
     {
       date: "2024年 11月",
