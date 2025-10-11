@@ -185,7 +185,7 @@ export const profile: Profile = {
       date: "2024年 11月",
       title: "技育展決勝大会で登壇",
       description:
-        "「GeekLink」を継続開発し、技育展決勝大会に進出。TOKYO NODE HALLでピッチを行った。",
+        "「GeekLink」を継続開発し、技育展決勝大会に進出した。TOKYO NODE HALLでピッチを行った。",
       urls: [
         "https://note.supporterz.jp/n/n7e84e3fc0128#7c904a2f-790c-4fb7-8a94-852a51fb4006",
         "https://x.com/geek_pjt/status/1854093869484482829",
