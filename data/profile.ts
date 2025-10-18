@@ -167,7 +167,7 @@ export const profile: Profile = {
       date: "2024年 8月",
       title: "株式会社TAIANで一週間のサマーインターン",
       description:
-        "株式会社TAIANで一週間のサマーインターンに参加。フロントエンドのDDD化を行った。",
+        "株式会社TAIANで一週間のサマーインターンに参加し、フロントエンドのDDD化を行った。",
     },
     {
       date: "2024年 9月",
